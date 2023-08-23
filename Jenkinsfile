@@ -1,8 +1,10 @@
 pipeline {
-    agent any
-//     agent {
-//         docker { image 'python:3' }
-//     }
+//     agent any
+    agent {
+        node {
+            label 'docker-agent-python'
+            }
+      }
 
     stages {
         stage('Build') {
@@ -10,10 +12,10 @@ pipeline {
                 script {
                     echo 'Building the application...'
 //                     sh 'pip --version'
-//                     sh '''
-//                         cd files
-//                         pip install -r requirements.txt
-//                     '''
+                    sh '''
+                        cd files
+                        pip install -r requirements.txt
+                    '''
                 }
             }
         }
