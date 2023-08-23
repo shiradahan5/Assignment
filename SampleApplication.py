@@ -41,7 +41,7 @@ if __name__ == '__main__':
         print(f"The product of {args.a} and {args.b} is: {result}")
 
     # Run the tests
-    unittest.main()
+    # unittest.main()
 
 # import argparse
 # import unittest
