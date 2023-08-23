@@ -1,18 +1,11 @@
 pipeline {
     agent any
-//     agent {
-//         node {
-//             label 'docker-agent-python'
-//             }
-//       }
 
     stages {
         stage('Build') {
             steps {
                 script {
                     echo 'Building the application...'
-//                     sh 'pip --version'
-//                         pip install -r requirements.txt
                     sh '''
                         cd files
                         python3 -m pip install -r requirements.txt
@@ -27,9 +20,7 @@ pipeline {
                     echo 'Running Python script...'
                      sh '''
                         cd files
-                        python SampleApplication.py add 5 3
-                        python SampleApplication.py multiply 4 2
-                        python -m unittest SampleApplication.py
+                        python -m unittest testSampleApplication.py
                      '''
                 }
             }
@@ -39,7 +30,12 @@ pipeline {
             steps {
                 script {
                     echo 'Deploying the application...'
-                    // You can add deployment commands here
+                    sh '''
+                        cd files
+                        python SampleApplication.py add 5 3
+                        python SampleApplication.py multiply 4 2
+                     '''
+
                 }
             }
         }
