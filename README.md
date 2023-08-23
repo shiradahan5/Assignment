@@ -12,6 +12,7 @@ The repository is organized as follows:
 |   |-- SampleApplication.py     # Main calculator application
 |   |-- testSampleApplication.py # test applications
 |   |-- requirements.txt         # List of required Python packages
+|   |-- jenkins_log_example.txt  # The final output of Jenkins pipeline
 
 |
 |-- Jenkinsfile             # Declarative Jenkins pipeline configuration
@@ -20,7 +21,9 @@ The repository is organized as follows:
 
 ## Sample Application
 
-The `SampleApplication.py` file contains a basic calculator application with two functions: `add_numbers` and `multiply_numbers`. Additionally, it includes unittests to verify the accuracy of these functions.
+The `SampleApplication.py` file contains a basic calculator application with two functions: `add_numbers` and `multiply_numbers`.
+The `testSampleApplication.py` includes unittests to verify the accuracy of these functions.
+I added the final output of the Jenkins pipline.
 
 ## Jenkins Pipeline
 
