@@ -7,10 +7,10 @@ pipeline {
                 script {
                     echo 'Building the application...'
 
-                    sh '''
-                        cd files
-                        pip install -r requirements.txt
-                    '''
+//                     sh '''
+//                         cd files
+//                         pip install -r requirements.txt
+//                     '''
                 }
             }
         }
