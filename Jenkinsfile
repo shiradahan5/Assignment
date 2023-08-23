@@ -15,8 +15,8 @@ pipeline {
             steps {
                 script {
                     echo 'Running Python script...'
-//                     sh 'python SampleApplication.py add 5 3'  // Example: Run add operation with 5 and 3
-//                     sh 'python SampleApplication.py multiply 4 2'  // Example: Run multiply operation with 4 and 2
+                    sh 'python SampleApplication.py add 5 3'  // Example: Run add operation with 5 and 3
+                    sh 'python SampleApplication.py multiply 4 2'  // Example: Run multiply operation with 4 and 2
 //                     sh 'python hello.py'  // Run the Python script
                 }
             }
