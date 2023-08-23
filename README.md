@@ -7,10 +7,12 @@ This repository contains a sample calculator application implemented in Python, 
 The repository is organized as follows:
 
 ```
-/                           # Repository root
-|-- files/                  # Directory for application files
-|   |-- SampleApplication.py # Main calculator application
-|   |-- requirements.txt     # List of required Python packages
+/                                # Repository root
+|-- files/                       # Directory for application files
+|   |-- SampleApplication.py     # Main calculator application
+|   |-- testSampleApplication.py # test applications
+|   |-- requirements.txt         # List of required Python packages
+
 |
 |-- Jenkinsfile             # Declarative Jenkins pipeline configuration
 |-- README.md               # Project documentation
@@ -25,8 +27,8 @@ The `SampleApplication.py` file contains a basic calculator application with two
 The `Jenkinsfile` defines a three-stage pipeline:
 
 1. **Build**: Installs required Python packages from `requirements.txt`.
-2. **Test**: Executes the unittests defined in `SampleApplication.py`.
-3. **Deploy**: Placeholder for potential deployment steps (can be customized).
+2. **Test**: Executes the unittests defined in `testSampleApplication.py`.
+3. **Deploy**: Executes `SampleApplication.py` with various arguments.
 
 ## Running the Pipeline
 
