@@ -13,7 +13,7 @@ class CalculatorTests(unittest.TestCase):
         """
         self.assertEqual(SampleApplication.add_numbers(2, 3), 5)
         self.assertEqual(SampleApplication.add_numbers(-1, 1), 0)
-        print("test addition pass!")
+        print("passed test addition!")
 
     def test_multiplication(self):
         """
@@ -22,4 +22,4 @@ class CalculatorTests(unittest.TestCase):
         """
         self.assertEqual(SampleApplication.multiply_numbers(2, 3), 6)
         self.assertEqual(SampleApplication.multiply_numbers(0, 5), 0)
-        print("test multiplication pass!")
+        print("passed test multiplication!")
