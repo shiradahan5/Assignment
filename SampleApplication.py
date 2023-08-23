@@ -1,26 +1,33 @@
-
-
 import argparse
 import unittest
+
 
 def add_numbers(a, b):
     return a + b
 
+
 def multiply_numbers(a, b):
     return a * b
 
-# class CalculatorTests(unittest.TestCase):
-#     def test_addition(self):
-#         self.assertEqual(add_numbers(2, 3), 5)
-#         self.assertEqual(add_numbers(-1, 1), 0)
-#
-#     def test_multiplication(self):
-#         self.assertEqual(multiply_numbers(2, 3), 6)
-#         self.assertEqual(multiply_numbers(0, 5), 0)
+
+class CalculatorTests(unittest.TestCase):
+    def test_addition(self):
+        print("test_addition")
+        self.assertEqual(add_numbers(2, 3), 5)
+        self.assertEqual(add_numbers(-1, 1), 0)
+
+
+def test_multiplication(self):
+    print("test_multiplication")
+    self.assertEqual(multiply_numbers(2, 3), 6)
+    self.assertEqual(multiply_numbers(0, 5), 0)
+
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Calculator')
-    parser.add_argument('operation', choices=['add', 'multiply'], help='Choose the operation (add/multiply)')
+    parser.add_argument('operation', choices=['add', 'multiply'],
+                        help='Choose the operation (add/multiply)')
     parser.add_argument('a', type=float, help='First number')
     parser.add_argument('b', type=float, help='Second number')
 
@@ -34,9 +41,7 @@ if __name__ == '__main__':
         print(f"The product of {args.a} and {args.b} is: {result}")
 
     # Run the tests
-    # unittest.main()
-
-
+    unittest.main()
 
 # import argparse
 # import unittest
