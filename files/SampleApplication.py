@@ -63,6 +63,7 @@ if __name__ == '__main__':
         result = multiply_numbers(args.a, args.b)
         print(f"The product of {args.a} and {args.b} is: {result}")
 
+
     # Run the tests
     # unittest.main()
 
