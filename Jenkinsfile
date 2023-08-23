@@ -32,8 +32,8 @@ pipeline {
                     echo 'Deploying the application...'
                     sh '''
                         cd files
-                        python SampleApplication.py add 5 3
-                        python SampleApplication.py multiply 4 2
+                        python SampleApplication.py --operation add --a 5 --b 3
+                        python SampleApplication.py --operation multiply --a 4 --b 2
                      '''
 
                 }

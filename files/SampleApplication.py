@@ -25,10 +25,10 @@ def multiply_numbers(a, b):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Calculator')
-    parser.add_argument('operation', choices=['add', 'multiply'],
+    parser.add_argument('--operation', choices=['add', 'multiply'],
                         help='Choose the operation (add/multiply)')
-    parser.add_argument('a', type=float, help='First number')
-    parser.add_argument('b', type=float, help='Second number')
+    parser.add_argument('--a', type=float, help='First number')
+    parser.add_argument('--b', type=float, help='Second number')
 
     args = parser.parse_args()
 
