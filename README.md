@@ -1,7 +1,5 @@
 # Devops Home Assignment - Shira Dahan
 
-# Sample Calculator Application and Jenkins Pipeline
-
 This repository contains a sample calculator application implemented in Python, along with a Jenkins pipeline to build, test, and deploy the application. The project demonstrates the integration of Jenkins pipelines, Git version control, and basic unit testing.
 
 ## Project Structure
